@@ -1,0 +1,29 @@
+<h1 id="subjectName" itemprop="name">
+  <span itemprop="givenName">{{ person.givenName | uppercase }}</span> <span itemprop="familyName">{{ person.familyName | uppercase }}</span>
+</h1>
+<div id="jobTitle" class="accent" itemprop="jobTitle">{{ person.title }}</div>
+<dl id="personalInfo">
+  <a itemprop="email" href="mailto:your-email@gmail.com">
+    <dt aria-label="email">{% include 'icons/icon-email.njk' %}</dt>
+    <dd id="emailLabel">{{ person.email }}</dd>
+  </a>
+  <a
+    id="locationWrapper"
+    itemprop="homeLocation"
+    itemscope
+    href="{{ person.locationMap }}"
+  >
+    <dt aria-label="location">{% include 'icons/icon-location.njk' %}</dt>
+    <dd id="locationLabel">{{ person.city }}, {{ person.state }}</dd>
+  </a>
+  <a
+    id="telephoneWrapper"
+    itemprop="telephone"
+    itemscope
+    href="tel:+{{ person.telephoneDialable }}"
+  >
+    <dt aria-label="telephone">{% include 'icons/icon-telephone.njk' %}</dt>
+    <dd id="telephoneLabel">{{ person.telephone }}</dd>
+  </a>
+</dl>
+{% include 'actions.njk' %}

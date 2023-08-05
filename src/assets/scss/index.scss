@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+$underlineStyling: underline dotted 1px;
+
+@import 'variables';
+@import 'colors';
+@import 'reset';
+
+@import 'aside';
+@import 'languages';
+@import 'main';
+@import 'personalDetails';
+@import 'ratings';
+@import 'skills';
+@import 'social';
+
+@font-face {
+  font-family: 'LibraSansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('LibraSansRegular'), url('/fonts/LibraSans.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  font-family: 'LibraSansRegular', serif;
+}
+
+header {
+  position: relative;
+}
+
+.container {
+  padding: 1em;
+}
+
+.columns {
+  display: block;
+}
+
+section {
+  margin-top: 0.75em;
+}
+
+.sectionHr {
+  height: 2px;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .container {
+    margin: 2em auto 2em auto;
+    max-width: 8.5in;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 40px;
+  }
+}
+
+// @media print {}

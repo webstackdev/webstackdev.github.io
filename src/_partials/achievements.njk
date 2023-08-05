@@ -1,0 +1,21 @@
+<h2>ACHIEVEMENTS</h2>
+<hr class="sectionHr">
+<ul class="asideList">
+  {%- for achievement in collections.achievementSection -%}
+  <li
+    class="asideItem"
+    itemref="resumeSubject"
+    itemscope
+    itemprop="knowsAbout"
+    itemtype="http://schema.org/knowsAbout"
+  >
+    <span class="asideIcons">
+      {% include 'icons/badges/icon-' + achievement.data.icon + '.njk' %}
+    </span>
+    <span class="asideContent">
+      <h3 class="asideHeader">{{ achievement.data.contributionArea }}</h3>
+      <div>{{ achievement.content | safe }}</div>
+    </span>
+  </li>
+  {%- endfor -%}
+</ul>

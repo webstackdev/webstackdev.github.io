@@ -1,0 +1,11 @@
+{
+  "givenName": "Kevin",
+  "familyName": "Brown",
+  "title": "Freelance Software Developer",
+  "email": "kevin@webstackbuilders.com",
+  "telephone": "1 (888) 987-1881",
+  "telephoneDialable": "8889871881",
+  "city": "Clayton",
+  "state": "Delaware",
+  "locationMap": "https://goo.gl/maps/2YrZYDRvD3FU9mkCA"
+}

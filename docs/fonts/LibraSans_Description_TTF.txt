@@ -1,0 +1,6 @@
+Family: Libra Sans (TTF)
+Designer: Stefan Peev
+Foundry: Context Ltd.
+Category: San-serif
+Description: 
+Libra Sans is a free-to-use non-commercial font derivated by Stefan Peev (https://www.contextbg.net) and released under the SIL Open Font License (OFL) (http://scripts.sil.org/OFL).

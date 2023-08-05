@@ -1,0 +1,32 @@
+[
+  {
+    "socialName": "GitHub",
+    "socialIcon": "github",
+    "socialLink": "https://github.com/webstackdev",
+    "order": 1
+  },
+  {
+    "socialName": "LinkedIn",
+    "socialIcon": "linkedin",
+    "socialLink": "https://www.linkedin.com/in/kevin-brown-developer/",
+    "order": 2
+  },
+  {
+    "socialName": "Twitter",
+    "socialIcon": "twitter",
+    "socialLink": "https://twitter.com/WebstackDev",
+    "order": 3
+  },
+  {
+    "socialName": "YouTube",
+    "socialIcon": "youtube",
+    "socialLink": "https://www.youtube.com/@webstackbuilders",
+    "order": 4
+  },
+  {
+    "socialName": "Stack Overflow",
+    "socialIcon": "stackoverflow",
+    "socialLink": "https://stackoverflow.com/users/8075005/webstackdev",
+    "order": 5
+  }
+]

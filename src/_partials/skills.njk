@@ -1,0 +1,15 @@
+<h2>SKILLS</h2>
+<hr class="sectionHr">
+<ul class="skillList">
+  {%- for skill in skills -%}
+  <li
+    class="skillItem"
+    itemref="resumeSubject"
+    itemscope
+    itemprop="knowsAbout"
+    itemtype="http://schema.org/knowsAbout"
+  >
+    <a class="skillItemAnchor" href="{{ skill.skillLink }}">{{ skill.discipline }}</a>
+  </li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,37 @@
+/** Languages */
+
+.languageList {
+  margin-left: 5px;
+  padding-left: 0;
+}
+
+.languageItem {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.languageName {
+  font-weight: 700;
+  width: 6em;
+}
+
+.languageRating {
+  align-items: top;
+  fill: $lightgray;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+
+  span:not(:last-child) {
+    margin-right: 3px;
+  }
+}
+
+@media (min-width:768px) {}
+
+@media print {}

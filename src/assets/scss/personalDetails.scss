@@ -1,0 +1,111 @@
+#personalInfo {
+  display: flex;
+  flex-direction: column;
+
+  dt {
+    display: flex;
+    align-items: center
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.4em;
+    text-decoration: $underlineStyling;
+
+    &:hover {
+      color: $gray;
+      text-decoration-color: $gray;
+    }
+  }
+
+  dd {
+    display: inline;
+  }
+
+  svg {
+    fill: $gray;
+  }
+}
+
+#subjectName {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+#emailLabel {
+  margin-left: 5px;
+}
+
+#locationLabel {
+  margin-left: 2px;
+}
+
+#telephoneLabel {
+  margin-left: 3px;
+}
+
+#jobTitle {
+  color: $emphasis;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#actions {
+  display: none;
+}
+
+.actionBtn:hover {
+  fill: $gray;
+}
+
+@media (min-width:768px) {
+  #personalInfo {
+    flex-direction: row;
+
+    a {
+      margin-top: 0;
+    }
+  }
+
+  #locationWrapper {
+    margin-left: 7px;
+  }
+
+  #telephoneWrapper {
+    margin-left: 10px;
+  }
+
+  /** Print and Download PDF buttons only show on notebook / desktop views */
+  #actions {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  #download {
+    margin-right: 1.25em;
+  }
+}
+
+@media print {
+  #personalInfo {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  #actions {
+    display: none;
+  }
+}

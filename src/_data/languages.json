@@ -1,0 +1,26 @@
+[
+  {
+    "language": "TypeScript",
+    "order": 1,
+    "level": "Native",
+    "rating": 5
+  },
+  {
+    "language": "PHP",
+    "order": 2,
+    "level": "Proficient",
+    "rating": 4
+  },
+  {
+    "language": "Python",
+    "order": 3,
+    "level": "Proficient",
+    "rating": 4
+  },
+  {
+    "language": "SQL",
+    "order": 4,
+    "level": "Proficient",
+    "rating": 4
+  }
+]

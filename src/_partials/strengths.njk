@@ -1,0 +1,21 @@
+<h2>STRENGTHS</h2>
+<hr class="sectionHr">
+<ul class="asideList">
+  {%- for strength in collections.strengthSection -%}
+  <li
+    class="asideItem"
+    itemref="resumeSubject"
+    itemscope
+    itemprop="knowsAbout"
+    itemtype="http://schema.org/knowsAbout"
+  >
+    <span class="asideIcons">
+      {% include 'icons/badges/icon-' + strength.data.icon + '.njk' %}
+    </span>
+    <span class="asideContent">
+      <h3 class="asideHeader">{{ strength.data.strengthArea }}</h3>
+      <div>{{ strength.content | safe }}</div>
+    </span>
+  </li>
+  {%- endfor -%}
+</ul>

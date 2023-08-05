@@ -1,0 +1,25 @@
+<h2>LANGUAGES</h2>
+<hr class="sectionHr">
+<ul class="languageList">
+  {%- for language in languages -%}
+  <li
+    class="languageItem"
+    itemref="resumeSubject"
+    itemscope
+    itemprop="knowsAbout"
+    itemtype="http://schema.org/knowsAbout"
+  >
+    <div class="languageMeta">
+      <div class="languageName">{{ language.language }}</div>
+      <div>{{ language.level }}</div>
+    </div>
+    <div class="languageRating languageRating-{{ language.rating }}">
+      <span class="languageRatingItem-1">{% include 'icons/icon-circle.njk' %}</span>
+      <span class="languageRatingItem-2">{% include 'icons/icon-circle.njk' %}</span>
+      <span class="languageRatingItem-3">{% include 'icons/icon-circle.njk' %}</span>
+      <span class="languageRatingItem-4">{% include 'icons/icon-circle.njk' %}</span>
+      <span class="languageRatingItem-5">{% include 'icons/icon-circle.njk' %}</span>
+    </div>
+  </li>
+  {%- endfor -%}
+</ul>

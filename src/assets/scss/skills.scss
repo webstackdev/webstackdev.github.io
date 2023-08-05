@@ -1,0 +1,27 @@
+.skillList {
+  margin-left: 5px;
+  padding-left: 0;
+}
+
+.skillItem {
+  font-weight: 600;
+  list-style: none;
+  text-decoration: $underlineStyling;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.skillItemAnchor {
+  color: $black;
+
+  &:hover {
+    color: $gray;
+    text-decoration-color: $gray;
+  }
+}
+
+@media (min-width:768px) {}
+
+@media print {}

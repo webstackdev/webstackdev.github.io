@@ -1,0 +1,41 @@
+$emphasis: red;
+$textColor: black;
+$lightgray: lightgrey;
+$gray: grey;
+$white: white;
+$black: black;
+
+body {
+  background-color: $lightgray;
+  color: $textColor;
+}
+
+a {
+  color: $textColor;
+}
+
+.container {
+  background-color: $white;
+}
+
+.sectionHr {
+  background-color: $black;
+}
+
+.githubIcon {
+  fill: #171515;
+}
+
+.linkedinIcon {
+  fill: #0A66C2;
+}
+
+.twitterIcon {
+  fill: #00ACEE;
+}
+
+.youtubeIcon {
+  path, polygon {
+    fill: #FF0000;
+  }
+}

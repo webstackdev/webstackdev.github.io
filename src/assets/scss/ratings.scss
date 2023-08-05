@@ -1,0 +1,35 @@
+.languageRating-1 {
+  span:nth-of-type(1) {
+    fill: $emphasis;
+  }
+}
+
+.languageRating-2 {
+  span:nth-of-type(1),
+  span:nth-of-type(2) {
+    fill: $emphasis;
+  }
+}
+
+.languageRating-3 {
+  span:nth-of-type(1),
+  span:nth-of-type(2),
+  span:nth-of-type(3) {
+    fill: $emphasis;
+  }
+}
+
+.languageRating-4 {
+  span:nth-of-type(1),
+  span:nth-of-type(2),
+  span:nth-of-type(3),
+  span:nth-of-type(4) {
+    fill: $emphasis;
+  }
+}
+
+.languageRating-5 {
+  span {
+    fill: $emphasis;
+  }
+}

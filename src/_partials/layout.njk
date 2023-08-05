@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume for {{ person.givenName }} {{ person.familyName }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta
+      name="description"
+      content="Curriculum vitae/resume for {{ person.givenName }} {{ person.familyName }}"
+    >
+    <meta name="keywords" content="resume, cv, curriculum, vitae">
+    <link
+      rel="preload"
+      href="/fonts/LibraSans.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body id="resumeSubject" itemtype="http://schema.org/Person">
+    {{ content | safe }}
+  </body>
+</html>

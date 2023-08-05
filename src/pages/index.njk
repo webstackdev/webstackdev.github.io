@@ -1,0 +1,44 @@
+---
+layout: layout.njk
+permalink: 'index.html'
+---
+<div class="container">
+  <header id="personal-details" itemscope itemref="resumeSubject">
+    {% include 'personalDetails.njk' %}
+  </header>
+  <div class="columns">
+    <main>
+      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+        {% include 'summary.njk' %}
+      </section>
+      <section id="experience">
+        {% include 'experience.njk' %}
+      </section>
+      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+        {% include 'education.njk' %}
+      </section>
+    </main>
+    <aside>
+      <section id="strengths">
+        {% include 'strengths.njk' %}
+      </section>
+      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+        {% include 'skills.njk' %}
+      </section>
+      <section id="achievements">
+        {% include 'achievements.njk' %}
+      </section>
+      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+        {% include 'languages.njk' %}
+      </section>
+      <section
+        id="socialSection"
+        itemscope
+        itemref="resumeSubject"
+        itemtype="http://schema.org/ItemList"
+      >
+        {% include 'social.njk' %}
+      </section>
+    <aside>
+  </div>
+</div>

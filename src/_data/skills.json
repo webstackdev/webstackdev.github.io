@@ -1,0 +1,32 @@
+[
+  {
+    "discipline": "Agile methodologies",
+    "skillLink": "",
+    "order": 1
+  },
+  {
+    "discipline": "Version control (Git)",
+    "skillLink": "",
+    "order": 2
+  },
+  {
+    "discipline": "Cloud computing (AWS)",
+    "skillLink": "",
+    "order": 3
+  },
+  {
+    "discipline": "Database design",
+    "skillLink": "",
+    "order": 4
+  },
+  {
+    "discipline": "Web development (React / Vanilla JS)",
+    "skillLink": "",
+    "order": 5
+  },
+  {
+    "discipline": "CI / CD Pipelines",
+    "skillLink": "",
+    "order": 6
+  }
+]

@@ -1,0 +1,39 @@
+/** Achievements, Strengths */
+.asideList {
+  padding-left: 0;
+}
+
+.asideItem {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+
+.asideItem {
+  list-style: none;
+}
+
+.asideHeader {
+  font-size: 1.1em;
+}
+
+.asideIcons {
+  flex-shrink: 0;
+
+  svg {
+    fill: $emphasis;
+    margin-top: 6px;
+  }
+}
+
+.asideContent {
+  margin-left: 10px;
+}
+
+@media (min-width:768px) {}
+
+@media print {}

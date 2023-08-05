@@ -1,0 +1,26 @@
+<h2>SOCIAL</h2>
+<hr class="sectionHr">
+<ul id="socialList">
+  {%- for socialNetwork in collections.socialSection -%}
+  <li
+    class="socialItem"
+    itemref="resumeSubject"
+    itemscope
+    itemprop="sameAs"
+    itemtype="http://schema.org/WebSite"
+  >
+    <div class="socialDetailText">{{ socialNetwork.socialName }}</div>
+    <a
+      itemprop="url"
+      title="{{ socialNetwork.socialName }}"
+      rel="me"
+      href="{{ socialNetwork.socialLink }}"
+    >
+      <span class="socialIcon">
+        {% include 'icons/social-media/icon-round-' + socialNetwork.socialIcon + '.njk' %}
+      </span>
+      <span class="socialDetailTextLink">{{ socialNetwork.socialLink }}</span>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>

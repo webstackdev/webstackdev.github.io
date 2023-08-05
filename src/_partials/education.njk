@@ -1,0 +1,45 @@
+<h2>EDUCATION</h2>
+<hr class="sectionHr">
+{%- for educationItem in education -%}
+<div
+  class="mainItem"
+  itemref="resumeSubject"
+  itemscope
+  itemprop="alumniOf"
+  itemtype="http://schema.org/EducationalOrganization"
+>
+  <h3
+    itemprop="description"
+  >
+    <abbr title="{{ educationItem.degree }}">{{ educationItem.degreeAbbr }}</abbr> in {{ educationItem.major }}
+  </h3>
+  <div class="mainDetailName" itemprop="name">
+    {{ educationItem.educationName }}
+  </div>
+  <div class="mainDetails">
+    <span
+      class="mainDetailHeader"
+      itemprop="Role"
+      itemscope
+      itemtype="https://schema.org/Role"
+    >
+      <span class="mainDetailIcon">{% include 'icons/icon-calendar.njk' %}</span>
+      <span class="mainDetailText">
+        <span itemprop="startDate" itemtype="http://schema.org/startDate" content="2006-02-21T20:00">{{ educationItem.startDate }}</span> - <span itemprop="endDate" itemtype="http://schema.org/endDate" content="2009-02-21T20:00">{{ educationItem.endDate }}</span>
+      </span>
+    </span>
+    <a
+      class="detailLocationAnchor"
+      href="{{ educationItem.locationMap }}"
+      itemprop="address"
+      itemscope
+      itemtype="http://schema.org/PostalAddress"
+    >
+      <span class="mainDetailIcon">{% include 'icons/icon-location.njk' %}</span>
+      <span class="mainDetailText">
+        <span itemprop="addressLocality">{{ educationItem.employerCity }}</span>, <span itemprop="addressRegion">{{ educationItem.employerState }}</span>
+      </span>
+    </a>
+  </div>
+</div>
+{%- endfor -%}
