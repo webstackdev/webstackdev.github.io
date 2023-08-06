@@ -51,6 +51,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ 'src/assets/fonts': 'fonts' })
   eleventyConfig.addPassthroughCopy({ 'src/assets/images': 'images' })
+  eleventyConfig.addPassthroughCopy({ 'src/assets/pdf': 'pdf' })
 
   eleventyConfig.addFilter('startDateShortCode', date => {
     return formatDate(date)
