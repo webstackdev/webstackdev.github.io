@@ -47,8 +47,10 @@
 
 #jobTitle {
   color: $emphasis;
+  font-family: 'LibraSansBold', serif;
   font-weight: 700;
   font-size: 1.5em;
+  letter-spacing: 0.5px;
 }
 
 #actions {
@@ -100,9 +102,20 @@
 
 @media print {
   #personalInfo {
+    flex-direction: row;
+
     a {
+      margin-top: 0;
       text-decoration: none;
     }
+  }
+
+  #locationWrapper {
+    margin-left: 7px;
+  }
+
+  #telephoneWrapper {
+    margin-left: 10px;
   }
 
   #actions {

@@ -3,7 +3,7 @@ layout: layout.njk
 permalink: 'index.html'
 ---
 <div class="container">
-  <header id="personal-details" itemscope itemref="resumeSubject">
+  <header id="personalDetails" itemscope itemref="resumeSubject">
     {% include 'personalDetails.njk' %}
   </header>
   <div class="columns">
@@ -14,11 +14,14 @@ permalink: 'index.html'
       <section id="experience">
         {% include 'experience.njk' %}
       </section>
-      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+      <section id="education-screen" itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
         {% include 'education.njk' %}
       </section>
     </main>
     <aside>
+      <section id="education-print" itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+        {% include 'education.njk' %}
+      </section>
       <section id="strengths">
         {% include 'strengths.njk' %}
       </section>
@@ -28,7 +31,7 @@ permalink: 'index.html'
       <section id="achievements">
         {% include 'achievements.njk' %}
       </section>
-      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+      <section id="languages" itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
         {% include 'languages.njk' %}
       </section>
       <section

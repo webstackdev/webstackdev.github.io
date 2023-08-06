@@ -13,9 +13,9 @@ employmentType: Freelance
 employmentSite: Remote
 ---
 - Developed 10+ full stack applications utilizing React, NodeJS, TypeScript, React Native, Express, Laravel, and AWS technology stack.
-- Designed and coded 1,000+ unit and integration tests using Jest and agile methodology.
+- Designed and coded 1,000+ unit, integration, and e2e tests using Mocha, Jest, and Playwight runners.
 - Completed troubleshooting of 2,000+ code-related issues and defects.
 - Attended 100+ weekly stand-up meetings to receive tasks and instruction for weekly goals.
-- Developed 10+ headless CMS applications using NextJS, GatsbyJS, and various providers including Sanity and Contentful. 
+- Developed 10+ headless CMS applications using NextJS, GatsbyJS, and various providers including Sanity and Contentful.
 - Experience with both REST and GraphQL API design and implementation.
 - Implemented pre-bid programmatic auction ad system for a publishing platform, and integration with Facebook using their SDK and API.

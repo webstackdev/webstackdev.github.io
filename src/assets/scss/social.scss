@@ -1,7 +1,10 @@
 #socialList {
+  color: $black;
   padding-left: 0;
 
   a {
+    text-decoration: $underlineStyling;
+
     &:hover {
       color: $gray;
       text-decoration-color: $gray;
@@ -65,6 +68,12 @@
 }
 
 @media print {
+  #socialList {
+    a {
+      text-decoration: none;
+    }
+  }
+
   .socialIcon {
     display: none;
   }

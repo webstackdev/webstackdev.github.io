@@ -7,8 +7,10 @@
 
 .mainDetailName {
   color: $emphasis;
-  font-weight: bold;
-  margin-bottom: 3px;
+  font-family: 'LibraSansBold', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5px;
 }
 
 .mainDetails {
@@ -37,7 +39,9 @@
 }
 
 .mainDetailIcon {
-  fill: $gray;
+  svg {
+    fill: $gray;
+  }
 }
 
 .mainDetailText {
@@ -69,11 +73,27 @@
 // @media (min-width:768px) {}
 
 @media print {
-  .mainDetailIcons {
-    fill: $black;
+  .mainDetailName {
+    color: $black;
   }
 
   .detailLocationAnchor {
     text-decoration: none;
+  }
+
+  .mainDetailIcon {
+    svg {
+      fill: $black;
+    }
+  }
+
+  .detailLocationAnchor {
+    text-decoration: none;
+  }
+}
+
+@media print {
+  .experienceDetailContent li:last-child {
+    display: none;
   }
 }

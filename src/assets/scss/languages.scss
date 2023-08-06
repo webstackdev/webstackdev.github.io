@@ -21,7 +21,7 @@
 }
 
 .languageRating {
-  align-items: top;
+  align-items: start;
   fill: $lightgray;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,3 @@
     margin-right: 3px;
   }
 }
-
-@media (min-width:768px) {}
-
-@media print {}

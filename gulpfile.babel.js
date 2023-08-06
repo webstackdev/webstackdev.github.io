@@ -1,20 +1,8 @@
-import eslint from 'gulp-eslint-new'
-import gulp from 'gulp'
-import htmlmin from 'gulp-htmlmin'
-import htmllint from 'gulp-htmllint'
-import fancyLog from 'fancy-log'
-import colors from 'ansi-colors'
-
-const htmlMinifierOptions = {
-  collapseWhitespace: true,
-}
-
-gulp.task('minify', () => {
-  return gulp
-    .src('.cache/*.html')
-    .pipe(htmlmin(htmlMinifierOptions))
-    .pipe(gulp.dest('dist'))
-})
+const eslint = require('gulp-eslint-new')
+const gulp = require('gulp')
+const htmllint = require('gulp-htmllint')
+const fancyLog = require('fancy-log')
+const colors = require('ansi-colors')
 
 const htmllintReporter = (filepath, issues) => {
   if (issues.length > 0) {

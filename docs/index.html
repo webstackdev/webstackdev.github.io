@@ -16,11 +16,19 @@
       type="font/ttf"
       crossorigin="anonymous"
     >
+    <link
+      rel="preload"
+      href="/fonts/LibraSansBold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body id="resumeSubject" itemtype="http://schema.org/Person">
     <div class="container">
-  <header id="personal-details" itemscope itemref="resumeSubject">
+  <header id="personalDetails" itemscope itemref="resumeSubject">
     <h1 id="subjectName" itemprop="name">
   <span itemprop="givenName">KEVIN</span> <span itemprop="familyName">BROWN</span>
 </h1>
@@ -159,10 +167,10 @@
       </span>
     </a>
   </div>
-  <div class="mainDetailContent" itemprop="description">
+  <div class="mainDetailContent experienceDetailContent" itemprop="description">
     <ul>
 <li>Developed 10+ full stack applications utilizing React, NodeJS, TypeScript, React Native, Express, Laravel, and AWS technology stack.</li>
-<li>Designed and coded 1,000+ unit and integration tests using Jest and agile methodology.</li>
+<li>Designed and coded 1,000+ unit, integration, and e2e tests using Mocha, Jest, and Playwight runners.</li>
 <li>Completed troubleshooting of 2,000+ code-related issues and defects.</li>
 <li>Attended 100+ weekly stand-up meetings to receive tasks and instruction for weekly goals.</li>
 <li>Developed 10+ headless CMS applications using NextJS, GatsbyJS, and various providers including Sanity and Contentful.</li>
@@ -230,7 +238,7 @@
       </span>
     </a>
   </div>
-  <div class="mainDetailContent" itemprop="description">
+  <div class="mainDetailContent experienceDetailContent" itemprop="description">
     <ul>
 <li>Worked with users, observing business processes, interviewing staff, and documenting practices. Conducted research, analyzed business operations, and problem solved operating inefficiencies.</li>
 <li>Created and analyzed users requirements for technology systems using use cases, mock ups, and interviewing stakeholders.</li>
@@ -299,7 +307,7 @@
       </span>
     </a>
   </div>
-  <div class="mainDetailContent" itemprop="description">
+  <div class="mainDetailContent experienceDetailContent" itemprop="description">
     <ul>
 <li>Managed a multi-homed high availability distributed compute platform and infrastructure (BGP, OSPF, VLAN, Cisco IOS).</li>
 <li>Installed, configured, tested and maintained operating systems (RHEL/KVM/QEMU, BSD), application software, and system management tools.</li>
@@ -311,7 +319,7 @@
   </div>
 </div>
       </section>
-      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+      <section id="education-screen" itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
         <h2>EDUCATION</h2>
 <hr class="sectionHr"><div
   class="mainItem"
@@ -363,6 +371,56 @@
       </section>
     </main>
     <aside>
+      <section id="education-print" itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+        <h2>EDUCATION</h2>
+<hr class="sectionHr"><div
+  class="mainItem"
+  itemref="resumeSubject"
+  itemscope
+  itemprop="alumniOf"
+  itemtype="http://schema.org/EducationalOrganization"
+>
+  <h3
+    itemprop="description"
+  >
+    <abbr title="Bachelor of Science">B.S.</abbr> in Computational Biology and Biophysics
+  </h3>
+  <div class="mainDetailName" itemprop="name">
+    Purdue University
+  </div>
+  <div class="mainDetails">
+    <span
+      class="mainDetailHeader"
+      itemprop="Role"
+      itemscope
+      itemtype="https://schema.org/Role"
+    >
+      <span class="mainDetailIcon"><svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C6 1.44772 6.44772 1 7 1C7.55228 1 8 1.44772 8 2V3H16V2C16 1.44772 16.4477 1 17 1C17.5523 1 18 1.44772 18 2V3H19C20.6569 3 22 4.34315 22 6V20C22 21.6569 20.6569 23 19 23H5C3.34315 23 2 21.6569 2 20V6C2 4.34315 3.34315 3 5 3H6V2ZM16 5V6C16 6.55228 16.4477 7 17 7C17.5523 7 18 6.55228 18 6V5H19C19.5523 5 20 5.44772 20 6V9H4V6C4 5.44772 4.44772 5 5 5H6V6C6 6.55228 6.44772 7 7 7C7.55228 7 8 6.55228 8 6V5H16ZM4 11V20C4 20.5523 4.44772 21 5 21H19C19.5523 21 20 20.5523 20 20V11H4Z" />
+</svg></span>
+      <span class="mainDetailText">
+        <span itemprop="startDate" itemtype="http://schema.org/startDate" content="2006-02-21T20:00">1992</span> - <span itemprop="endDate" itemtype="http://schema.org/endDate" content="2009-02-21T20:00">1996</span>
+      </span>
+    </span>
+    <a
+      class="detailLocationAnchor"
+      href="https://goo.gl/maps/bgNJPLsubqhyUf1M6"
+      itemprop="address"
+      itemscope
+      itemtype="http://schema.org/PostalAddress"
+    >
+      <span class="mainDetailIcon"><svg height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g>
+    <path d="M12,1C7.58,1,4,4.58,4,9c0,7.08,8,14,8,14s8-6.92,8-14C20,4.58,16.42,1,12,1z M12,12c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3S13.66,12,12,12z" />
+  </g>
+</svg></span>
+      <span class="mainDetailText">
+        <span itemprop="addressLocality">Lafayette</span>, <span itemprop="addressRegion">Indiana</span>
+      </span>
+    </a>
+  </div>
+</div>
+      </section>
       <section id="strengths">
         <h2>STRENGTHS</h2>
 <hr class="sectionHr">
@@ -524,7 +582,7 @@
     </span>
   </li></ul>
       </section>
-      <section itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
+      <section id="languages" itemscope itemref="resumeSubject" itemtype="http://schema.org/ItemList">
         <h2>LANGUAGES</h2>
 <hr class="sectionHr">
 <ul class="languageList"><li

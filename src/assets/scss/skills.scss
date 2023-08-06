@@ -6,7 +6,6 @@
 .skillItem {
   font-weight: 600;
   list-style: none;
-  text-decoration: $underlineStyling;
 
   &:not(:last-child) {
     margin-bottom: 5px;
@@ -15,6 +14,7 @@
 
 .skillItemAnchor {
   color: $black;
+  text-decoration: $underlineStyling;
 
   &:hover {
     color: $gray;
@@ -22,6 +22,8 @@
   }
 }
 
-@media (min-width:768px) {}
-
-@media print {}
+@media print {
+  .skillItemAnchor {
+    text-decoration: none;
+  }
+}
