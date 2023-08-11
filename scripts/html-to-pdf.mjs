@@ -5,7 +5,6 @@ import puppeteer from 'puppeteer'
 
 const htmlPath = resolve('docs/index.html')
 const stylePath = resolve('.cache/pdf.css')
-const cacheHtmlPath = resolve('.cache/index.html')
 const pdfOutputPath = resolve('docs/resume.pdf')
 
 class FileMissingError extends Error {
