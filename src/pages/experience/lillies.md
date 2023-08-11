@@ -2,7 +2,7 @@
 order: 2
 startDate: 2011-06
 endDate: 2013-08
-jobTitle: 'System Analyst'
+jobTitle: 'Systems Analyst'
 employerName: 'Eli Lilly'
 employerLogo: lilly.png
 employerCity: Indianapolis
