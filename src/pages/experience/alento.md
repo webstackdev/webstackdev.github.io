@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 2
 startDate: 2013-08
 endDate: 2016-02
 jobTitle: 'Infrastructure Engineer'

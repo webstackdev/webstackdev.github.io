@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 startDate: 2011-06
 endDate: 2013-08
 jobTitle: 'Systems Analyst'
