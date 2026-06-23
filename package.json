@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "2.0.1",
-    "@babel/core": "7.22.9",
+    "@babel/core": "7.29.6",
     "@babel/preset-env": "7.22.9",
     "@babel/register": "7.22.5",
     "@testing-library/dom": "9.3.1",
